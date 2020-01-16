@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Nabed</title>
+    <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="mselect/jquery.multiselect.js"></script>
+        <link rel="stylesheet" type="text/css" href="mselect/jquery.multiselect.css">
+        <!-- <script src="mselect/jquery.multiselect.css"></script>  -->
+        <script type="text/javascript" src="validate.js"></script> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+        <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="css/util.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="mselect/jquery.multiselect.css">
+    <!--===============================================================================================-->
+        <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+        <link href="mselect/jquery.multiselect.css" rel="stylesheet" />
+        
+        <link rel="stylesheet" href="build/css/intlTelInput.css">
+
+   
+</head>
+<body>
+
+	<!-- <div class="container-contact100" > -->
+        
+		<div class="wrap-contact100">
+                <img src="https://nabed.net/wp-content/uploads/2018/03/nabed-english.png" alt="Nabed for Optimal Healthcare outcome" id="logo"  width ="320" style = " position: absolute;
+                left:7%;
+                top:2%;">
+
+                <span class="contact100-form-title">
+                        <br>Marketing Kit <br><br>
+                    </span>
+
+            <form class="contact100-form validate-form"  action= "sms2.php" method = "post" name= "myForm" autocomplete="off" id = 'formid'  onsubmit= "return ((validateN() & ValidateE(document.myForm.email))==1)"
+           >
+                        
+                <div class="wrap-input100 validate-input alert-validate" data-validate= "Title is required">
+                    <label class="label-input100" for="name">title</label>
+                    <input id="name" class="input100" type="text" name="Title" placeholder="Enter your title ..." required>
+                        <span class="focus-input100"></span>
+                        </div>
+				<div class="wrap-input100 validate-input alert-validate" data-validate=" FirstName is required">
+					<label class="label-input100" for="name">first name</label>
+					<input id="name" class="input100" type="text" name="firstname" placeholder="Enter your first name..." required>
+					<span class="focus-input100"></span>
+				</div>
+                
+                <div class="wrap-input100 validate-input alert-validate" data-validate="LastName is required">
+                    <label class="label-input100" for="name">last name</label>
+                    <input id="name" class="input100" type="text" name="lastname" placeholder="Enter your last name..." required>
+                        <span class="focus-input100"></span>
+                        </div>
+
+                <div class="wrap-input100 validate-input alert-validate" data-validate="Phone is required">
+                    <label class="label-input100" for="name">Phone Number</label>
+                    <input id="phone" class="input100" type="tel" name="phone" placeholder="Area Code is required ..." required>
+                    <span id="valid-msg" class="hide" style = "display: none;">✓ Valid</span>
+                    <span id="error-msg" class="hide" style = "display: none;"></span>                    
+                        <span class="focus-input100"></span>
+                        </div>
+                <div class="wrap-input100 validate-input alert-validate" data-validate="organization is required">
+                    <label class="label-input100" for="name">organization</label>
+                    <input id="name" class="input100" type="text" name="organization" placeholder="Enter your organization ..." required>
+                        <span class="lfocus-input100"></span>
+                        </div>
+                
+				<div class="wrap-input100 validate-input alert-validate" data-validate = "Valid email is required: ex@abc.xyz">
+					<label class="label-input100" for="email">Email Address</label>
+					<input id="email" class="input100" type="text" name="email" placeholder="Enter your email..." required>
+					<span class="lfocus-input100"></span>
+				</div>
+
+                <div class="wrap-input100 validate-input alert-validate" data-validate = "">
+                    <div class="label-input100">Marketing Material</div>
+                    <div>
+                        <select name="material[]" multiple id="langOpt"  >
+                            <option value="Patient Journey ARABIC" >Patient Journey ARABIC</option>
+                            <option value="Patient Journey ENGLISH" >  Patient Journey ENGLISH</option>
+                            <option value="Patient Journey Khaliji">Patient Journey Khaliji</option>
+                            <option value="Patient Journey Pharma ENGLISH" >Patient Journey Pharma ENGLISH</option>
+                            <option value="Anatomy Preview" >Anatomy Preview </option>
+                            <option value="Interactive Tablet Teaser" >Interactive Tablet Teaser</option>
+                            <option value="Interactive Tablet Diabetes Segment Promo">Interactive Tablet Diabetes Segment Promo</option>
+                        </select>
+                    
+					<span class="focus-input100"></span>
+                </div>
+                    </div>
+                <div class="wrap-input100 validate-input">
+                     <input class="submit" type="submit" value="send" name = "submit" >
+                    
+                        <span class="focus-input100"></span>
+                        </div>
+
+
+				<div class="100-form-social flex-c-m">
+					<a href="https://www.facebook.com/nabedcare/" class="contact100-form-social-item flex-c-m bg1 m-r-5">
+						<i class="fa fa-facebook-f" aria-hidden="true"></i>
+					</a>
+
+					<a href="https://twitter.com/Nabedhealth" class="contact100-form-social-item flex-c-m bg2 m-r-5">
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+					</a>
+
+                    <a href="http://instagram.com/nabed_health/" class="contact100-form-social-item flex-c-m bg3">
+						<i class="fa fa-youtube-play" aria-hidden="true"></i>
+					</a>
+				</div>
+			</form>
+
+      </div> 
+		</div>
+	  <!-- </div> -->
+        <script src="vendor/animsition/js/animsition.min.js"></script>
+        <script src="vendor/bootstrap/js/popper.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script> 
+
+    <script>
+        $('select[multiple]').multiselect();
+        $('#langOpt').multiselect({
+                                  columns: 1,
+                                  placeholder: 'Select options',
+                                  search: true,
+                                  });
+        </script>
+ 
+    <script>
+        function ValidateE(inputText){
+        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if(inputText.value.match(mailformat))
+        {
+        document.myForm.email.focus();
+        return true;
+        }
+        else
+        {
+        alert("You have entered an invalid email address!");
+        document.myForm.email.focus();
+        return false;
+        }
+    }
+    </script>
+  <script src="build/js/intlTelInput.js"></script>
+
+  <script>
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input);
+    errorMsg = document.querySelector("#error-msg"),
+  validMsg = document.querySelector("#valid-msg");
+
+// here, the index maps to the error code returned from getValidationError - see readme
+var errorMap = ["Invalid number", "Invalid country code", "Too short", "Too long", "Invalid number"];
+var iti = window.intlTelInput(input, {
+  utilsScript: "build/js/utils.js"
+});
+var reset = function() {
+  input.classList.remove("error");
+  errorMsg.innerHTML = "";
+  errorMsg.classList.add("hide");
+  validMsg.classList.add("hide");
+};
+function validateN(){
+  reset();
+  if (input.value.trim()) {
+    if (iti.isValidNumber()) {
+      validMsg.classList.remove("hide");
+      return true;
+
+    } else {
+        alert("You have entered an invalid phone number!")
+      input.classList.add("error");
+      var errorCode = iti.getValidationError();
+      errorMsg.innerHTML = errorMap[errorCode];
+      errorMsg.classList.remove("hide");
+      return false;
+    }
+  }
+};
+
+// on keyup / change flag: reset
+input.addEventListener('change', reset);
+input.addEventListener('keyup', reset);
+
+            
+        </script>
+            
+
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+	<script src="js/main.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>
+</body>
+</html>
